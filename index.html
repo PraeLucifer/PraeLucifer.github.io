@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Визитка</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .card {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .card h1 {
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+        .card p {
+            color: #555;
+            margin-bottom: 20px;
+            
+        }
+        .social-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #555;
+            font-size: 24px;
+            transition: color 0.3s;
+        }
+        .social-links a:hover {
+            color: #000;
+        }
+        /* Иконки социальных сетей (можно заменить на иконки из библиотек) */
+        .social-links a::before {
+            margin-right: 8px;
+        }
+        .social-links a.telegram::before {
+            content: "🆃🅶";
+            color: skyblue;
+        }
+        .social-links a.vk::before {
+            content: "🆅🅺";
+            color: slateblue;
+        }
+           .social-links a.whatsapp::before {
+            content: "✅";
+            color: seagreen;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <img src="your-photo.jpg" alt="Фотография" height=500 width=350> 
+        <h1>Александр Горский</h1>
+         <h2>QA Engineer</h2>
+         <h3 class="header__subtitle">Сложнее всего начать действовать</h3>
+        <div class="social-links">
+            <a href="https://t.me/Praelucifer" target="_blank" class="telegram">My telegram</a>
+            <a href="https://wa.me/+79126177176" target="_blank" class="whatsapp">WhatsApp</a>
+            <a href="https://vk.com/alekc654" target="_blank" class="vk">My VK</a>
+            <p>Телефон: <a href="tel:+79126177176">+7(912)6177176</a></p>
+          
+        </div>
+   
+   </div>
+
+</body>
+</html>
